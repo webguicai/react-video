@@ -1,0 +1,39 @@
+.videoBox {
+  box-sizing: border-box;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10%;
+  .tooltip {
+    margin-bottom: 10px;
+  }
+  .videoHeader {
+    display: flex;
+    &:extend(.videoBox .tooltip);
+  }
+}
+
+.videoPlay {
+  margin-top: 10px;
+  width: 100%;
+  iframe {
+    width: 100%;
+    height: 300px;
+    background: #000;
+  }
+  .emptyBox {
+    width: 100%;
+    height: 400px;
+    background: #000;
+    color: #fff;
+    display: grid;
+    place-items: center;
+  }
+  @media screen and (max-width: 1180px) {
+    iframe {
+      height: 400px;
+    }
+    .emptyBox {
+      height: 300px;
+    }
+  }
+}
